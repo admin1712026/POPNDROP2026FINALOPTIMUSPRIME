@@ -430,6 +430,23 @@ document.querySelectorAll('.franchise-blob, .decor-blob').forEach(blob => {
     });
 });
 
+function validate11DigitCode(code) {
+    // Убираем нецифровые символы (если нужны)
+    const cleaned = String(code).replace(/\D/g, '');
+    
+    // Проверка: 11 цифр
+    if (!/^\d{11}$/.test(cleaned)) return false;
+    
+    // Пример с контрольной суммой (упрощенный):
+    // допустим, последняя цифра - контрольная, сумма первых 10 должна делиться на 7
+    let sum = 0;
+    for (let i = 0; i < 10; i++) {
+        sum += parseInt(cleaned[i]);
+    }
+    const checkDigit = parseInt(cleaned[10]);
+    return (sum % 7) === checkDigit; // Логика проверки зависит от вашего стандарта
+}
+
 // ==================== РљРЈР РЎРћР -РЎР›Р•Р”РћР’РђРўР•Р›Р¬ (РћРџР¦РРћРќРђР›Р¬РќРћ) ====================
 // Р Р°СЃРєРѕРјРјРµРЅС‚РёСЂСѓР№С‚Рµ РґР»СЏ РІРєР»СЋС‡РµРЅРёСЏ РєР°СЃС‚РѕРјРЅРѕРіРѕ РєСѓСЂСЃРѕСЂР°
 /*
