@@ -222,13 +222,11 @@ function initContactForm() {
             isValid = false;
         }
 
-        // Внутри initContactForm(), после проверки "пустой телефон"
         const phoneDigits = phone.value.replace(/\D/g, "");
         if (phoneDigits.length > 11) {
-        showError(phone, "Телефон не должен содержать больше 11 цифр");
-        isValid = false;
+            showError(phone, "Телефон не должен содержать больше 11 цифр");
+            isValid = false;
         }
-
 
         if (!message.value.trim()) {
             showError(message, "Пожалуйста, введите сообщение");
