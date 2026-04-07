@@ -1,58 +1,572 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Меню - POP & DROP</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="menu-styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - POP & DROP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu-styles.css">
 </head>
 <body>
-  <div class="bubbles-container" id="bubbles"></div>
+    <!-- Animated Bubbles Background -->
+    <div class="bubbles-container" id="bubbles"></div>
 
-  <header class="header">
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <div class="logo-text">POP</div>
-        <div class="logo-icon">
-          <svg width="20" height="30" viewBox="0 0 20 30">
-            <path d="M5 5 L10 15 L15 5" stroke="#353535" stroke-width="2" fill="none"/>
-            <circle cx="10" cy="20" r="5" fill="#FF6363"/>
-          </svg>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">POP</div>
+                <div class="logo-icon">
+                    <svg width="20" height="30" viewBox="0 0 20 30">
+                        <path d="M5 5 L10 15 L15 5" stroke="#353535" stroke-width="2" fill="none"/>
+                        <circle cx="10" cy="20" r="5" fill="#FF6363"/>
+                    </svg>
+                </div>
+                <div class="logo-text">DROP</div>
+            </a>
+            <nav class="nav">
+                <a href="index.html#why">Почему POP & DROP?</a>
+                <a href="menu.html" class="active">Меню</a>
+                <a href="index.html#franchise">Франшиза</a>
+                <a href="index.html#reviews">Отзывы</a>
+            </nav>
+            <div class="header-right">
+                <a href="tel:+79999999999" class="phone">+79999999999</a>
+                <a href="index.html#contact" class="btn btn-primary">Открыть свою точку</a>
+            </div>
         </div>
-        <div class="logo-text">DROP</div>
-      </a>
+    </header>
 
-      <nav class="nav">
-        <a href="index.html#why">Почему POP & DROP?</a>
-        <a href="menu.html" class="active">Меню</a>
-        <a href="index.html#franchise">Франшиза</a>
-        <a href="index.html#reviews">Отзывы</a>
-      </nav>
+    <!-- Menu Title -->
+    <section class="menu-page-header">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>МЕНЮ</span>
+            </a>
+        </div>
+    </section>
 
-      <div class="header-right">
-        <a href="tel:+79999999999" class="phone">+79999999999</a>
-        <a href="index.html#contact" class="btn btn-primary">Открыть свою точку</a>
-      </div>
-    </div>
-  </header>
+    <!-- Classic Lemonades -->
+    <section class="menu-category">
+        <div class="container">
+            <h2 class="category-title">Классические лимонады</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="carousel1">
+                    <div class="carousel-track">
+                        <div class="drink-card" data-color="#FFB74D">
+                            <div class="drink-circle" style="background: #FFB74D;"></div>
+                            <div class="drink-cup yellow">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="yellow1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#FFF59D"/>
+                                            <stop offset="100%" style="stop-color:#FFEB3B"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#yellow1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#FFFDE7" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#FF6B6B" opacity="0.8" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#FF6B6B" opacity="0.8" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#FF6B6B" opacity="0.8" class="bubble"/>
+                                    <circle cx="50" cy="120" r="5" fill="#FF6B6B" opacity="0.8" class="bubble"/>
+                                    <circle cx="75" cy="90" r="6" fill="#FF6B6B" opacity="0.8" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Вишня гранат</p>
+                            <p class="drink-price">440р</p>
+                        </div>
 
-  <section class="menu-page-header">
-    <div class="container">
-      <a href="index.html" class="back-link">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M15 18L9 12L15 6" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span>МЕНЮ</span>
-      </a>
-    </div>
-  </section>
+                        <div class="drink-card" data-color="#FFF59D">
+                            <div class="drink-circle" style="background: #FFF59D;"></div>
+                            <div class="drink-cup yellow-light">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="yellow2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#FFFDE7"/>
+                                            <stop offset="100%" style="stop-color:#FFF59D"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#yellow2)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#FFFDE7" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#C5E1A5" opacity="0.9" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#AED581" opacity="0.9" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#C5E1A5" opacity="0.9" class="bubble"/>
+                                    <circle cx="50" cy="120" r="5" fill="#AED581" opacity="0.9" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Лимон лайм</p>
+                            <p class="drink-price">440р</p>
+                        </div>
 
-  <main class="menu-dynamic" id="menuFromDb">
-    <div class="menu-loading">Загрузка меню...</div>
-  </main>
+                        <div class="drink-card active" data-color="#FF6363">
+                            <div class="drink-circle" style="background: #FF6363;"></div>
+                            <div class="drink-cup red">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="red1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#FFCDD2"/>
+                                            <stop offset="100%" style="stop-color:#EF5350"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#red1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#FFEBEE" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#B71C1C" opacity="0.6" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#C62828" opacity="0.6" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#B71C1C" opacity="0.6" class="bubble"/>
+                                    <circle cx="50" cy="120" r="5" fill="#D32F2F" opacity="0.6" class="bubble"/>
+                                    <circle cx="75" cy="95" r="6" fill="#C62828" opacity="0.6" class="bubble"/>
+                                    <circle cx="45" cy="80" r="5" fill="#B71C1C" opacity="0.6" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">POP&DROP</text>
+                                    <!-- Strawberry decoration -->
+                                    <circle cx="85" cy="25" r="8" fill="#E53935"/>
+                                    <path d="M83 17 Q85 12 87 17" fill="#4CAF50"/>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Клубника</p>
+                            <p class="drink-price">440р</p>
+                        </div>
 
-  <script src="supabase-config.js"></script>
-  <script src="menu-script.js"></script>
+                        <div class="drink-card" data-color="#FFCC80">
+                            <div class="drink-circle" style="background: #FFCC80;"></div>
+                            <div class="drink-cup orange">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="orange1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#FFF3E0"/>
+                                            <stop offset="100%" style="stop-color:#FFE0B2"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#orange1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#FFF8E1" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#FF6B6B" opacity="0.8" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#FF6B6B" opacity="0.8" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#FF6B6B" opacity="0.8" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Вишня гранат</p>
+                            <p class="drink-price">440р</p>
+                        </div>
+
+                        <div class="drink-card" data-color="#FFF59D">
+                            <div class="drink-circle" style="background: #FFF59D;"></div>
+                            <div class="drink-cup lemon">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="lemon1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#FFFDE7"/>
+                                            <stop offset="100%" style="stop-color:#FFF176"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#lemon1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#FFFDE7" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#FFEB3B" opacity="0.9" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#FDD835" opacity="0.9" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#FFEB3B" opacity="0.9" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Лимон лайм</p>
+                            <p class="drink-price">440р</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev" onclick="moveCarousel('carousel1', -1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveCarousel('carousel1', 1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tropical Mixes -->
+    <section class="menu-category">
+        <div class="container">
+            <h2 class="category-title">Тропические миксы</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="carousel2">
+                    <div class="carousel-track">
+                        <div class="drink-card" data-color="#C5E1A5">
+                            <div class="drink-circle" style="background: #C5E1A5;"></div>
+                            <div class="drink-cup green">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="green1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#E8F5E9"/>
+                                            <stop offset="100%" style="stop-color:#C8E6C9"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#green1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#E8F5E9" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#81C784" opacity="0.8" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#66BB6A" opacity="0.8" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#81C784" opacity="0.8" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Кокос</p>
+                            <p class="drink-price">520р</p>
+                        </div>
+
+                        <div class="drink-card" data-color="#FFE082">
+                            <div class="drink-circle" style="background: #FFE082;"></div>
+                            <div class="drink-cup yellow-green">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="yg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#F1F8E9"/>
+                                            <stop offset="100%" style="stop-color:#DCEDC8"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#yg1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#F1F8E9" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#AED581" opacity="0.8" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#9CCC65" opacity="0.8" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#AED581" opacity="0.8" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Лайм фейхоа</p>
+                            <p class="drink-price">520р</p>
+                        </div>
+
+                        <div class="drink-card active" data-color="#80DEEA">
+                            <div class="drink-circle" style="background: #80DEEA;"></div>
+                            <div class="drink-cup cyan">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="cyan1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#E0F7FA"/>
+                                            <stop offset="50%" style="stop-color:#80DEEA"/>
+                                            <stop offset="100%" style="stop-color:#4DB6AC"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#cyan1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#E0F7FA" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#26A69A" opacity="0.7" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#4DB6AC" opacity="0.7" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#26A69A" opacity="0.7" class="bubble"/>
+                                    <circle cx="50" cy="120" r="5" fill="#4DB6AC" opacity="0.7" class="bubble"/>
+                                    <circle cx="75" cy="95" r="6" fill="#26A69A" opacity="0.7" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                    <!-- Lemon decoration -->
+                                    <ellipse cx="80" cy="25" rx="10" ry="6" fill="#FDD835"/>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Манго маракуя</p>
+                            <p class="drink-price">520р</p>
+                        </div>
+
+                        <div class="drink-card" data-color="#A5D6A7">
+                            <div class="drink-circle" style="background: #A5D6A7;"></div>
+                            <div class="drink-cup mint">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="mint1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#E8F5E9"/>
+                                            <stop offset="100%" style="stop-color:#A5D6A7"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#mint1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#E8F5E9" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#66BB6A" opacity="0.8" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#81C784" opacity="0.8" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#66BB6A" opacity="0.8" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Кокос</p>
+                            <p class="drink-price">520р</p>
+                        </div>
+
+                        <div class="drink-card" data-color="#FFF59D">
+                            <div class="drink-circle" style="background: #FFF59D;"></div>
+                            <div class="drink-cup lime">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="lime1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#F9FBE7"/>
+                                            <stop offset="100%" style="stop-color:#E6EE9C"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#lime1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#F9FBE7" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#C0CA33" opacity="0.8" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#CDDC39" opacity="0.8" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#C0CA33" opacity="0.8" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Лайм фейхоа</p>
+                            <p class="drink-price">520р</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev" onclick="moveCarousel('carousel2', -1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveCarousel('carousel2', 1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Авторские сезонные -->
+    <section class="menu-category">
+        <div class="container">
+            <h2 class="category-title">Авторские сезонные</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="carousel3">
+                    <div class="carousel-track">
+                        <div class="drink-card" data-color="#CE93D8">
+                            <div class="drink-circle" style="background: #CE93D8;"></div>
+                            <div class="drink-cup purple">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="purple1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#F3E5F5"/>
+                                            <stop offset="100%" style="stop-color:#CE93D8"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#purple1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#F3E5F5" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#AB47BC" opacity="0.6" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#9C27B0" opacity="0.6" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#AB47BC" opacity="0.6" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Виноградный день</p>
+                            <p class="drink-price">520р</p>
+                        </div>
+
+                        <div class="drink-card" data-color="#90CAF9">
+                            <div class="drink-circle" style="background: #90CAF9;"></div>
+                            <div class="drink-cup blue">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="blue1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#E3F2FD"/>
+                                            <stop offset="100%" style="stop-color:#90CAF9"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#blue1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#E3F2FD" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#42A5F5" opacity="0.6" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#2196F3" opacity="0.6" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#42A5F5" opacity="0.6" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Пепси лайт</p>
+                            <p class="drink-price">520р</p>
+                        </div>
+
+                        <div class="drink-card active" data-color="#FFCC80">
+                            <div class="drink-circle" style="background: #FFCC80;"></div>
+                            <div class="drink-cup peach">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="peach1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#FFF8E1"/>
+                                            <stop offset="50%" style="stop-color:#FFCC80"/>
+                                            <stop offset="100%" style="stop-color="#FFB74D"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#peach1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#FFF8E1" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#FF8A65" opacity="0.7" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#FFAB91" opacity="0.7" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#FF8A65" opacity="0.7" class="bubble"/>
+                                    <circle cx="50" cy="120" r="5" fill="#FFAB91" opacity="0.7" class="bubble"/>
+                                    <circle cx="75" cy="95" r="6" fill="#FF8A65" opacity="0.7" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="7" fill="#353535" font-weight="bold">POP & DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Персиковый сет</p>
+                            <p class="drink-price">600р</p>
+                        </div>
+
+                        <div class="drink-card" data-color="#80DEEA">
+                            <div class="drink-circle" style="background: #80DEEA;"></div>
+                            <div class="drink-cup teal">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="teal1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#E0F2F1"/>
+                                            <stop offset="100%" style="stop-color:#80CBC4"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#teal1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#E0F2F1" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#26A69A" opacity="0.6" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#4DB6AC" opacity="0.6" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#26A69A" opacity="0.6" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Виноградный день</p>
+                            <p class="drink-price">520р</p>
+                        </div>
+
+                        <div class="drink-card" data-color="#BCAAA4">
+                            <div class="drink-circle" style="background: #BCAAA4;"></div>
+                            <div class="drink-cup brown">
+                                <svg viewBox="0 0 120 160" class="cup-svg">
+                                    <defs>
+                                        <linearGradient id="brown1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#EFEBE9"/>
+                                            <stop offset="100%" style="stop-color:#A1887F"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#brown1)" stroke="#E0E0E0" stroke-width="1"/>
+                                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#EFEBE9" stroke="#E0E0E0"/>
+                                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                                    <circle cx="40" cy="100" r="8" fill="#6D4C41" opacity="0.6" class="bubble"/>
+                                    <circle cx="55" cy="85" r="6" fill="#8D6E63" opacity="0.6" class="bubble"/>
+                                    <circle cx="70" cy="110" r="7" fill="#6D4C41" opacity="0.6" class="bubble"/>
+                                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#353535" font-weight="bold">POP&DROP</text>
+                                </svg>
+                            </div>
+                            <p class="drink-name">Пепси лайт</p>
+                            <p class="drink-price">520р</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev" onclick="moveCarousel('carousel3', -1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveCarousel('carousel3', 1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-decor">
+            <div class="footer-blob blob1"></div>
+            <div class="footer-blob blob2"></div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo">
+                    <div class="logo-text">POP</div>
+                    <div class="logo-icon">
+                        <svg width="20" height="30" viewBox="0 0 20 30">
+                            <path d="M5 5 L10 15 L15 5" stroke="#353535" stroke-width="2" fill="none"/>
+                            <circle cx="10" cy="20" r="5" fill="#FF6363"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">DROP</div>
+                </div>
+                <p class="copyright">Все права защищены ©</p>
+            </div>
+            <div class="footer-contacts">
+                <div class="footer-section">
+                    <div class="footer-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6363">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Контакты</h4>
+                        <p>info@popdrop.ru</p>
+                        <p>+7 (812) 111-22-33</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6363">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Адрес</h4>
+                        <p>Россия, Санкт-Петербург,</p>
+                        <p>ул. Большая Морская, 18</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-drink">
+                <div class="footer-drink-circle"></div>
+                <svg viewBox="0 0 120 160" class="footer-cup-svg">
+                    <defs>
+                        <linearGradient id="footerRed" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFCDD2"/>
+                            <stop offset="100%" style="stop-color:#EF5350"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M25 30 L30 140 Q35 150 60 150 Q85 150 90 140 L95 30 Z" fill="url(#footerRed)" stroke="#E0E0E0" stroke-width="1"/>
+                    <ellipse cx="60" cy="30" rx="35" ry="8" fill="#FFEBEE" stroke="#E0E0E0"/>
+                    <path d="M55 5 L55 25 M65 5 L65 25" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round"/>
+                    <ellipse cx="60" cy="5" rx="15" ry="5" fill="#F5F5F5" stroke="#E0E0E0"/>
+                    <circle cx="40" cy="100" r="8" fill="#B71C1C" opacity="0.6" class="bubble"/>
+                    <circle cx="55" cy="85" r="6" fill="#C62828" opacity="0.6" class="bubble"/>
+                    <circle cx="70" cy="110" r="7" fill="#B71C1C" opacity="0.6" class="bubble"/>
+                    <circle cx="50" cy="120" r="5" fill="#D32F2F" opacity="0.6" class="bubble"/>
+                    <text x="60" y="70" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">POP&DROP</text>
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu-script.js"></script>
 </body>
 </html>
