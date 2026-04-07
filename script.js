@@ -217,16 +217,17 @@ function initContactForm() {
             isValid = false;
         }
 
-        if (!phone.value.trim()) {
+        // Проверка телефона
+        const phoneDigits = phone.value.replace(/\D/g, "");
+
+        if (!phoneDigits.length) {
             showError(phone, "Пожалуйста, введите телефон");
             isValid = false;
-        }
-
-        const phoneDigits = phone.value.replace(/\D/g, "");
-        if (phoneDigits.length > 11) {
+        } else if (phoneDigits.length > 11) {
             showError(phone, "Телефон не должен содержать больше 11 цифр");
             isValid = false;
         }
+
 
         if (!message.value.trim()) {
             showError(message, "Пожалуйста, введите сообщение");
